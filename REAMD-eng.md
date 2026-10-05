@@ -6,7 +6,7 @@
 [中文版](README.md) | [English Version](REAMD-eng.md)
 
 ## Main Scripts:
-[script1.js](src/script1.js) is used for automatic course watching, mainly implemented through `setInterval`.
+[script1.js](src/script1.js) watches course tasks, scrolls PPT/PDF courseware in steps, plays videos, and attempts to move to the next chapter after completion.
 
 [script2.js](src/script2.js) is used for automatic course selection, mainly implemented through `MutationObserver`.
 
@@ -45,3 +45,7 @@ Just copy and paste. Add both scripts to it.
 ![image-20231013131645043](assets/image-20231013131645043.png)
 
 > Note: There might be a pop-up window that gets stuck after finishing a chapter. In this case, turn off the script and repeat steps 1 and 2 to solve the issue.
+>
+> Video tasks must reach the platform's viewing-time requirement (for example, 90%). For PPT/PDF tasks beneath the video, the script tries to scroll inside the courseware frame and waits for the platform's completion notice. It attempts to move on only after every task in the section is complete. “100%” in the document toolbar is the zoom level, not task progress. If your course uses a different layout, provide a screenshot or the relevant DOM structure.
+>
+> When troubleshooting, enable only the latest `script1.js` and disable older copies and `script2.js`; the latter reloads the page every five minutes and can interrupt time-based tasks.
