@@ -35,7 +35,3 @@ Requires Node.js:
 ```bash
 node --test tests/script1.test.js
 ```
-
-## Acknowledgments
-
-Based on the original script by [CodFrm](https://github.com/CodFrm). Thanks to the original author for the contribution.

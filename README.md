@@ -35,7 +35,3 @@
 ```bash
 node --test tests/script1.test.js
 ```
-
-## 致谢
-
-基于 [CodFrm](https://github.com/CodFrm) 的原版脚本修改而来，感谢原作者的贡献。
